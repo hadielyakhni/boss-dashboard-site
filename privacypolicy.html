@@ -36,10 +36,10 @@
         <div class="menu_area">
           <nav class="navbar navbar-expand-lg navbar-light">
             <!-- Logo -->
-            <h3 style="color: white; margin-top: 7px;">Boss Dashboard</h3>
+            <h3 id="headerTitle" style="color: white; margin-top: 7px;">Boss Dashboard</h3>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
-              aria-controls="ca-navbar" style="border-width: 0px; margin-top: 2px;" aria-expanded="false"
-              aria-label="Toggle navigation">
+              aria-controls="ca-navbar" style="border-width: 0px; margin-top: 2px; margin-right: -28px;"
+              aria-expanded="false" aria-label="Toggle navigation">
               <i class="ti-menu" style="color:white;;" aria-hidden="true"></i>
             </button>
             <!-- Menu Area -->
@@ -245,6 +245,8 @@
   <script>
     let contact = document.getElementById('contact')
     contact.style.paddingTop = screen.width < 992 ? '30px' : '100px'
+    let headerTitle = document.getElementById('headerTitle')
+    headerTitle.style.marginLeft = screen.width < 992 ? '-28px' : '0px'
   </script>
   <!-- Jquery-2.2.4 JS -->
   <script src="js/jquery-2.2.4.min.js"></script>
